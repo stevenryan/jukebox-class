@@ -26,4 +26,15 @@
   grid-row-end: 4;
   border:2px dotted papayawhip;
   margin: 0 auto;
+  font-size: 18px;
+}
+
+.library h3{
+  text-align: center;
+}
+
+.library a{
+  text-decoration: none;
+  display: block;
+  margin: 5px auto;
 }
