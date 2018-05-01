@@ -1,0 +1,29 @@
+.wrapper{
+  display:grid;
+  grid-template-rows: 1fr 1fr 8fr;
+  width: 70%;
+  border: 2px solid;
+  height: 90vh;
+  margin: 0 auto;
+}
+
+.display{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  border:2px dotted pink;
+  text-align: center;
+}
+
+.controls{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border:2px dotted lightblue;
+  margin: auto;
+}
+
+.library{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  border:2px dotted papayawhip;
+  margin: 0 auto;
+}
