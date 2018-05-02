@@ -6,7 +6,7 @@ var stop = document.getElementById("stop")
 var shuffle = document.getElementById("shuffle")
 var songList = document.getElementById("songList")
 var toggle = document.getElementById("toggle")
-var track = document.getElementsByClass("track")
+var track = document.getElementsByClassName("track")
 
 var voiceline01 = new Audio("audio/dva-halloween.ogg")
 var voiceline02 = new Audio("audio/reaper-psychopath.mp3")

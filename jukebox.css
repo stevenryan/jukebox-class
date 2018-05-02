@@ -3,7 +3,7 @@
   grid-template-rows: 1fr 1fr 8fr;
   width: 70%;
   border: 2px solid;
-  height: 90vh;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -37,4 +37,22 @@
   text-decoration: none;
   display: block;
   margin: 5px auto;
+}
+
+.round-button {
+    display: inline-block;
+    width:64px;
+    height:64px;
+    line-height:50px;
+    border: 2px solid #fea101;
+    border-radius: 50%;
+    text-align:center;
+    text-decoration:none;
+    background: #60afeb;
+    box-shadow: 0 0 3px gray;
+    font-size:20px;
+    font-weight:bold;
+}
+.round-button:hover {
+    background: #1464a0;
 }
