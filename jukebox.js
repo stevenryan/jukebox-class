@@ -19,8 +19,9 @@ var voiceline08 = new Audio("audio/sombra-hackeverything.ogg")
 var voiceline09 = new Audio("audio/tracer-cheerslove.ogg")
 var voiceline10 = new Audio("audio/hanzo-dragon.ogg")
 var voiceline11 = new Audio("audio/torbjorn-opinion.ogg")
+var voiceline12 = new Audio("audio/mccree-notugly.ogg")
 
-var songLibrary = [voiceline01, voiceline02, voiceline03, voiceline04, voiceline05, voiceline06, voiceline07, voiceline08, voiceline09, voiceline10, voiceline11];
+var songLibrary = [voiceline01, voiceline02, voiceline03, voiceline04, voiceline05, voiceline06, voiceline07, voiceline08, voiceline09, voiceline10, voiceline11, voiceline12];
 var current = 0;
 var isPlaying = false;
 
@@ -133,8 +134,10 @@ class Jukebox{
         currentSong.innerHTML = "Tracer - Cheers love";
       } else if (current === 9) {
         currentSong.innerHTML = "Hanzo - Unleash the dragon";
-      } else {
+      } else if (current === 10) {
         currentSong.innerHTML = "Torbjorn - Your opinion";
+      } else {
+        currentSong.innerHTML = "Mccree - I'm not ugly";
       }
   }
 }
@@ -163,3 +166,19 @@ shuffle.addEventListener("click", function(){
   juke.random();
   juke.checkSong();
 })
+
+for(let i=0; i<track.length; i++){
+  track[i].addEventListener('click', function(){
+    songLibrary[current].pause();
+    songLibrary[current].currentTime = 0;
+    current = i;
+    songLibrary[current].play();
+    isPlaying = true;
+    toggle.src = "images/pause-button.png";
+    songLibrary[current].onended = function(){
+      isPlaying = false;
+      toggle.src = "images/play-button.png";
+    }
+    juke.checkSong();
+ })
+}
