@@ -186,16 +186,16 @@ for(let i=0; i<track.length; i++){
  })
 }
 
-var myIndex = 0;
-carousel();
+var picIndex = 0;
+slideShow();
 
-function carousel() {
+function slideShow() {
     var x = document.getElementsByClassName("heroes");
     for (let i=0; i<x.length; i++) {
        x[i].style.display = "none";
     }
-    myIndex++;
-    if (myIndex>x.length){myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 3000);
+    picIndex++;
+    if (picIndex>x.length){picIndex = 1}
+    x[picIndex-1].style.display = "block";
+    setTimeout(slideShow, 3000);
 }
