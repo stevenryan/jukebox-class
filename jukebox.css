@@ -17,6 +17,8 @@ body{
   grid-row-start: 1;
   grid-row-end: 2;
   text-align: center;
+  width: 370px;
+
 }
 .left{
   float: left;
