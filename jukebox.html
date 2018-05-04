@@ -10,28 +10,44 @@
 </head>
 <body>
   <div class="wrapper">
-    <div class="display"><h2 id="currentSong">Overwatch Voicelines</h2></div>
-    <div class="controls">
-      <a href="#" id="shuffle" class="round-button" title="random voiceline"><img src="images/shuffle-button.png" alt=""></a>
-      <a href="#" id="previous" class="round-button" title="previous voiceline"><img src="images/previous-button.png" alt=""></a>
-      <a href="#" id="playPause" class="round-button" title="play/pause"><img id="toggle" src="images/play-button.png" alt=""></a>
-      <a href="#" id="nextSong" class="round-button" title="next voiceline"><img src="images/next-button.png" alt=""></a>
-      <a href="#" id="stop" class="round-button" title="stop"><img src="images/stop-button.png" alt=""></a>
+    <div class="left">
+      <div class="display"><h2 id="currentSong">Overwatch Voicelines</h2></div>
+      <div class="controls">
+        <a href="#" id="shuffle" class="round-button" title="random voiceline"><img src="images/shuffle-button.png" alt=""></a>
+        <a href="#" id="previous" class="round-button" title="previous voiceline"><img src="images/previous-button.png" alt=""></a>
+        <a href="#" id="playPause" class="round-button" title="play/pause"><img id="toggle" src="images/play-button.png" alt=""></a>
+        <a href="#" id="nextSong" class="round-button" title="next voiceline"><img src="images/next-button.png" alt=""></a>
+        <a href="#" id="stop" class="round-button" title="stop"><img src="images/stop-button.png" alt=""></a>
+      </div>
+      <div id="songList" class="library">
+        <h3>Voicelines</h3>
+        <a href="#" class="track">D.Va - Happy Halloween</a>
+        <a href="#" class="track">Reaper - I'm not a pyschopath</a>
+        <a href="#" class="track">Widowmaker - One shot, one kill</a>
+        <a href="#" class="track">Genji - Cyborg Ninja</a>
+        <a href="#" class="track">Soldier 76 - Get off my lawn</a>
+        <a href="#" class="track">Roadhog - Everyone has a plan</a>
+        <a href="#" class="track">Junkrat - Happy Halloween</a>
+        <a href="#" class="track">Sombra - Everything can be hacked</a>
+        <a href="#" class="track">Tracer - Cheers love</a>
+        <a href="#" class="track">Hanzo - Unleash the dragon</a>
+        <a href="#" class="track">Torbjorn - Your opinion</a>
+        <a href="#" class="track">Mccree - I'm not ugly</a>
+        <a href="#" class="track">Pharah - Combat maneuvers</a>
+      </div>
     </div>
-    <div id="songList" class="library">
-      <h3>Voicelines</h3>
-      <a href="#" class="track">D.Va - Happy Halloween</a>
-      <a href="#" class="track">Reaper - I'm not a pyschopath</a>
-      <a href="#" class="track">Widowmaker - One shot, one kill</a>
-      <a href="#" class="track">Genji - Cyborg Ninja</a>
-      <a href="#" class="track">Soldier 76 - Get off my lawn</a>
-      <a href="#" class="track">Roadhog - Everyone has a plan</a>
-      <a href="#" class="track">Junkrat - Happy Halloween</a>
-      <a href="#" class="track">Sombra - Everything can be hacked</a>
-      <a href="#" class="track">Tracer - Cheers love</a>
-      <a href="#" class="track">Hanzo - Unleash the dragon</a>
-      <a href="#" class="track">Torbjorn - Your opinion</a>
-      <a href="#" class="track">Mccree - I'm not ugly</a>
+    <div class="right">
+      <div id="heroImages">
+        <img class="heroes" src="images/reaper-portrait.png" alt="">
+        <img class="heroes" src="images/pharah-portrait.png" alt="">
+        <img class="heroes" src="images/soldier76-portrait.png" alt="">
+        <img class="heroes" src="images/widowmaker-portrait.png" alt="">
+        <img class="heroes" src="images/roadhog-portrait.png" alt="">
+        <img class="heroes" src="images/tracer-portrait.png" alt="">
+        <img class="heroes" src="images/genji-portrait.png" alt="">
+        <img class="heroes" src="images/torbjorn-portrait.png" alt="">
+        <img class="heroes" src="images/tracer-portrait.png" alt="">
+      </div>
     </div>
   </div>
   <script type="text/javascript" src="jukebox.js"></script>

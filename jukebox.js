@@ -20,8 +20,9 @@ var voiceline09 = new Audio("audio/tracer-cheerslove.ogg")
 var voiceline10 = new Audio("audio/hanzo-dragon.ogg")
 var voiceline11 = new Audio("audio/torbjorn-opinion.ogg")
 var voiceline12 = new Audio("audio/mccree-notugly.ogg")
+var voiceline13 = new Audio("audio/pharah-combatmaneuvers.mp3")
 
-var songLibrary = [voiceline01, voiceline02, voiceline03, voiceline04, voiceline05, voiceline06, voiceline07, voiceline08, voiceline09, voiceline10, voiceline11, voiceline12];
+var songLibrary = [voiceline01, voiceline02, voiceline03, voiceline04, voiceline05, voiceline06, voiceline07, voiceline08, voiceline09, voiceline10, voiceline11, voiceline12, voiceline13];
 var current = 0;
 var isPlaying = false;
 
@@ -136,8 +137,10 @@ class Jukebox{
         currentSong.innerHTML = "Hanzo - Unleash the dragon";
       } else if (current === 10) {
         currentSong.innerHTML = "Torbjorn - Your opinion";
-      } else {
+      } else if (current === 11) {
         currentSong.innerHTML = "Mccree - I'm not ugly";
+      } else {
+        currentSong.innerHTML = "Pharah - Combat Maneuvers";
       }
   }
 }
@@ -181,4 +184,18 @@ for(let i=0; i<track.length; i++){
     }
     juke.checkSong();
  })
+}
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var x = document.getElementsByClassName("heroes");
+    for (let i=0; i<x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex>x.length){myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
 }
