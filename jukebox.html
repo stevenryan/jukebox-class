@@ -1,55 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Overwatch</title>
-  <link rel="icon" href="images/overwatch-icon.png">
-  <link rel="stylesheet" type="text/css" href="jukebox.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Overwatch</title>
+    <link rel="icon" href="assets/images/overwatch-icon.png">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
 </head>
+
 <body>
-  <div class="wrapper">
-    <div class="left">
-      <div class="display"><h2 id="currentSong">Overwatch Voicelines</h2></div>
-      <div class="controls">
-        <a href="#" id="shuffle" class="round-button" title="random voiceline"><img src="images/shuffle-button.png" alt=""></a>
-        <a href="#" id="previous" class="round-button" title="previous voiceline"><img src="images/previous-button.png" alt=""></a>
-        <a href="#" id="playPause" class="round-button" title="play/pause"><img id="toggle" src="images/play-button.png" alt=""></a>
-        <a href="#" id="nextSong" class="round-button" title="next voiceline"><img src="images/next-button.png" alt=""></a>
-        <a href="#" id="stop" class="round-button" title="stop"><img src="images/stop-button.png" alt=""></a>
-      </div>
-      <div id="songList" class="library">
-        <h3>Voicelines</h3>
-        <a href="#" class="track">D.Va - Happy Halloween</a>
-        <a href="#" class="track">Reaper - I'm not a pyschopath</a>
-        <a href="#" class="track">Widowmaker - One shot, one kill</a>
-        <a href="#" class="track">Genji - Cyborg Ninja</a>
-        <a href="#" class="track">Soldier 76 - Get off my lawn</a>
-        <a href="#" class="track">Roadhog - Everyone has a plan</a>
-        <a href="#" class="track">Junkrat - Happy Halloween</a>
-        <a href="#" class="track">Sombra - Everything can be hacked</a>
-        <a href="#" class="track">Tracer - Cheers love</a>
-        <a href="#" class="track">Hanzo - Unleash the dragon</a>
-        <a href="#" class="track">Torbjorn - Your opinion</a>
-        <a href="#" class="track">Mccree - I'm not ugly</a>
-        <a href="#" class="track">Pharah - Combat maneuvers</a>
-      </div>
+    <div class="wrapper">
+        <div class="left">
+            <div class="display">
+                <h2 id="currentSong">Overwatch Voicelines</h2>
+            </div>
+            <div class="controls">
+                <a href="#" id="shuffle" class="round-button" title="random voiceline">
+                    <img src="assets/images/shuffle-button.png" alt="">
+                </a>
+                <a href="#" id="previous" class="round-button" title="previous voiceline">
+                    <img src="assets/images/previous-button.png" alt="">
+                </a>
+                <a href="#" id="playPause" class="round-button" title="play/pause">
+                    <img id="toggle" src="assets/images/play-button.png" alt="">
+                </a>
+                <a href="#" id="nextSong" class="round-button" title="next voiceline">
+                    <img src="assets/images/next-button.png" alt="">
+                </a>
+                <a href="#" id="stop" class="round-button" title="stop">
+                    <img src="assets/images/stop-button.png" alt="">
+                </a>
+            </div>
+            <div id="songList" class="library">
+                <h3>Voicelines</h3>
+                <a href="#" class="track" data-songid="0">D.Va - Happy Halloween</a>
+                <a href="#" class="track" data-songid="1">Reaper - I'm not a pyschopath</a>
+                <a href="#" class="track" data-songid="2">Widowmaker - One shot, one kill</a>
+                <a href="#" class="track" data-songid="3">Genji - Cyborg Ninja</a>
+                <a href="#" class="track" data-songid="4">Soldier 76 - Get off my lawn</a>
+                <a href="#" class="track" data-songid="5">Roadhog - Everyone has a plan</a>
+                <a href="#" class="track" data-songid="6">Junkrat - Happy Halloween</a>
+                <a href="#" class="track" data-songid="7">Sombra - Everything can be hacked</a>
+                <a href="#" class="track" data-songid="8">Tracer - Cheers love</a>
+                <a href="#" class="track" data-songid="9">Hanzo - Unleash the dragon</a>
+                <a href="#" class="track" data-songid="10">Torbjorn - Your opinion</a>
+                <a href="#" class="track" data-songid="11">Mccree - I'm not ugly</a>
+                <a href="#" class="track" data-songid="12">Pharah - Combat maneuvers</a>
+            </div>
+        </div>
+        <div class="right">
+            <div id="heroImages">
+                <img src="">
+                <img class="heroes" src="assets/images/reaper-portrait.png" alt="">
+                <img class="heroes" src="assets/images/pharah-portrait.png" alt="">
+                <img class="heroes" src="assets/images/soldier76-portrait.png" alt="">
+                <img class="heroes" src="assets/images/widowmaker-portrait.png" alt="">
+                <img class="heroes" src="assets/images/roadhog-portrait.png" alt="">
+                <img class="heroes" src="assets/images/tracer-portrait.png" alt="">
+                <img class="heroes" src="assets/images/genji-portrait.png" alt="">
+                <img class="heroes" src="assets/images/torbjorn-portrait.png" alt="">
+                <img class="heroes" src="assets/images/tracer-portrait.png" alt="">
+            </div>
+        </div>
     </div>
-    <div class="right">
-      <div id="heroImages">
-        <img class="heroes" src="images/reaper-portrait.png" alt="">
-        <img class="heroes" src="images/pharah-portrait.png" alt="">
-        <img class="heroes" src="images/soldier76-portrait.png" alt="">
-        <img class="heroes" src="images/widowmaker-portrait.png" alt="">
-        <img class="heroes" src="images/roadhog-portrait.png" alt="">
-        <img class="heroes" src="images/tracer-portrait.png" alt="">
-        <img class="heroes" src="images/genji-portrait.png" alt="">
-        <img class="heroes" src="images/torbjorn-portrait.png" alt="">
-        <img class="heroes" src="images/tracer-portrait.png" alt="">
-      </div>
-    </div>
-  </div>
-  <script type="text/javascript" src="jukebox.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
+
 </html>
