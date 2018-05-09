@@ -210,7 +210,7 @@ function slideShow(heroid) {
     heroid++
     setTimeout(function(){
         slideShow(heroid)
-    },1000)
+    },3000)
 }
 
 slideShow(0);
